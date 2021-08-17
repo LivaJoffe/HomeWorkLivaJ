@@ -9,12 +9,12 @@
 
     for (i<- 1 to 100) {
       if (i % 5 == 0 && i % 7 == 0)
-        println(s"$i FizzBuzz")
+        println("FizzBuzz")
       else if (i % 5 == 0 && i % 7 != 0)
-        println(s" $i Fizz")
+        println("Fizz")
       else if (i % 5 != 0 && i % 7 == 0)
-        println(s" $i Buzz")
-      else println(s" $i number")
+        println("Buzz")
+      else println(i)
     }
 
 
