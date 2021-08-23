@@ -10,7 +10,6 @@ object CityPopulation extends App {
         newPopulation = (newPopulation*(percentage/100)) + newPopulation + delta
         counter += 1
       }
-
       println(s"Number of years when city will reach target population is $counter")
     }
     p0
