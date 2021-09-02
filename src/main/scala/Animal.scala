@@ -6,14 +6,11 @@ def makeSound () = println (s"$animalSound")
     println (s"My animal's name is $animalName, it's a $animalType, it likes $animalLikes, it is $animalAge years old")
   }
   def meet (contact:String): Unit =
-{
+{ val friendlyContact ="friendly"
+  val unfriendlyContact ="unfriendly"
+  if (contact == friendlyContact) println("greet")
+  else if (contact == unfriendlyContact) println("run away")
+  else println("unclear if the contact is friendly or unfriendly")
 
 }
 }
-//TODO add class variables name, animalType, likes, sound- all strings and age which is Int
-//TODO add class method makeSound which prints sound
-
-//BONUS
-//TODO add class method meet which has a parameter of contact:String
-//TODO this meet should decide whether to greet if they like the contact
-//TODO to run away if they do not like the contact
