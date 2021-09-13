@@ -24,7 +24,6 @@ object ExerciseSep13ParsingPoirot extends App {
   println(filteredLines(4))
 
   val dstPath = "src/resources/tableOfContents.txt"
-  val regexAlso = "/[a-z]+/g"
   val chapterLines = for (line <- lines if line.startsWith("CHAPTER")) yield line
   println(chapterLines.mkString("\n"))
   Utilities.saveLines(dstPath, chapterLines)
