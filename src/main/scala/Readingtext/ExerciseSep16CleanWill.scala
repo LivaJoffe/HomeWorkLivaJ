@@ -8,7 +8,6 @@ object ExerciseSep16CleanWill extends App {
   val matchText = "THE END"
   val linesNumberWithMatch = lines.zipWithIndex.filter(lineTuple => lineTuple._1.contains(matchText) )
   val endingIndex = linesNumberWithMatch.head._2+1
-  println(endingIndex)
   val cleanText =lines.slice(0,endingIndex)
   Utilities.saveLines(dst,cleanText)
 
