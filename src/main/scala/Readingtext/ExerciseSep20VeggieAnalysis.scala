@@ -17,9 +17,7 @@ object ExerciseSep20VeggieAnalysis extends App {
   //TODO extra credit get average price for lettuce by year
 
   val lettuce = veggieLines.filter(_.item.contains("lettuce"))
-  //lettuce.slice(0,7).foreach(println)
   val apples = veggieLines.filter(_.item.contains("apple"))
-  //apples.slice(0,10).foreach(println)
   val sortedApples = apples.sortBy(_.price)
   println("The 5 most expensive apple entries are")
   sortedApples.reverse.slice(0,5).foreach(println)
