@@ -19,7 +19,7 @@ object CookBook extends App {
   println(recipeLinesEnd.head)
   val endingIndex = recipeLinesEnd.head._2
 
-  val recipeLines = lines.slice(startingIndex, endingIndex+1) //Slicing only those lines of the text which are necessary
+  val recipeLines = lines.slice(startingIndex, endingIndex+1)
 
  val ingredients = recipeLines.filter(_.startsWith("    "))
  val rgxForAllCapsLines = "^[A-Z]*\\s.*".r
